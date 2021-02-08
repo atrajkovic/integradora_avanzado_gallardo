@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Nutricord - Nosotros</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img id="logo-img" src="images/logo.jpg" alt="Nutricord - Logo">
+            <canvas id="canvas-burguer" onclick="openMenu()"></canvas>
+        </div>
+        
+        <nav>
+            <ul id="botonera">
+                <a href="index.html"><li class="boton-nav">Inicio</li
+                ></a><a href=""><li class="btn-activo">Nosotros</li
+                ></a><a href="servicios.html"><li class="boton-nav">Servicios</li
+                ></a><a href="contacto.html"><li class="boton-nav">Contacto</li
+            ></a></ul>
+        </nav>
+    </header>
+
+    <section id="reproductor">
+        <video id="video" src="videos/alimentacion.mp4" poster="images/logo.jpg"></video>
+
+        <div id="controladores">
+            <div id="botones">
+                <button id="atrasar" class="btn-control fas fa-backward" onclick="tiempo(-20)"></button>
+                <button id="play" class="btn-control fas fa-play"></i></button>
+                <button id="stop" class="btn-control fas fa-stop"></button>
+                <button id="adelantar" class="btn-control fas fa-forward" onclick="tiempo(20)"></button>
+                <div id="barra" onclick="mover()"></div>
+                <div id="progreso"></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="valores">
+        <h2 id="valores-h2">Nuestros valores</h2>
+        <div id="flex-container">
+            <div class="flex-item">
+                <img class="valor-img" src="images/health.png" alt="">
+                <p class="valor-txt">Salud</p>
+            </div>
+            <div class="flex-item">
+                <img src="images/time.png" alt="" class="valor-img">
+                <p class="valor-txt">Puntualidad</p>
+            </div>
+            <div class="flex-item">
+                <img src="images/trust.png" alt="" class="valor-img">
+                <p class="valor-txt">Confianza</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/burguer.js"></script>
+</body>
+</html>

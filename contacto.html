@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricord - Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img id="logo-img" src="images/logo.jpg" alt="Nutricord - Logo">
+            <canvas id="canvas-burguer" onclick="openMenu()"></canvas>
+        </div>
+        <nav>
+            <ul id="botonera">
+                <a href="index.html"><li class="boton-nav">Inicio</li
+                ></a><a href="nosotros.html"><li class="boton-nav">Nosotros</li
+                ></a><a href="servicios.html"><li class="boton-nav">Servicios</li
+                ></a><a href=""><li class="btn-activo">Contacto</li
+            ></a></ul>
+        </nav>
+    </header>
+    <div>
+        <form>
+            <h3 id="cabeza-form">Formulario de Contacto</h3>
+            <label class="desc-formulario">Nombre</label>
+            <input id="nombre" class="campo-form" type="text" placeholder="Tu nombre">
+            <label class="desc-formulario">Apellido</label>
+            <input id="apellido" class="campo-form" type="text" placeholder="Tu apellido">
+            <label class="desc-formulario">Teléfono</label>
+            <input id="telefono" class="campo-form" type="text" placeholder="3510000000">
+            <label class="desc-formulario">Email</label>
+            <input type="text" class="campo-form" id="email" placeholder="ejemplo@dominio.com">
+            <label class="desc-formulario">Mensaje</label>
+            <textarea name="" id="mensaje" placeholder="¿En qué podemos ayudarte?"> </textarea>
+            <label class="desc-formulario">¿Tienes tu plan nutricional? Envíalo y te cotizamos</label>
+            <section id="drag-drop">¡Arrástralo aquí!</section>
+            <p id="adv-campos">*Todos los campos son obligatorios</p>
+            <br><input type="submit" id="enviar" value="Enviar">
+        </form>
+    </div>
+    <a href="http://wa.me/3513943646">
+        <svg id="svg-wsp" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="11" fill="#ffffff">
+                <animate attributeName="cy" from="-500" to="12" dur="3s"/>
+                <animate attributeName="fill" from="green" to="white" dur="3s"/>
+            </circle>
+            <path fill="green" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                <animate attributeName="opacity" from="0" to="0" dur="3s" restart="never"/>
+                <animate attributeName="opacity" from="0" to="1" dur="1s" begin="3s" restart="never"/>
+            </path>    
+        </svg>
+    </a>
+    
+    <script src="js/formulario.js"></script>
+    <script src="js/burguer.js"></script> 
+</body>
+</html>

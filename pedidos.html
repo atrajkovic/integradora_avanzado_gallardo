@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Pedidos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <div id="containerPedidos">
+        
+        <form>
+            <a href="index.html" style="text-decoration: none;">
+                <div id="volverPedidos">Volver al inicio</div>
+            </a>
+            <input type="text" id="pedido" placeholder="Nombre del pedido">
+            <select id="horarioComida">
+                <option value="desayuno">Desayuno</option>
+                <option value="almuerzo">Almuerzo</option>
+                <option value="cena">Cena</option>
+            </select>
+            <textarea id="descripComida" placeholder="Descripcion del pedido"></textarea>
+            <input type="date" id="fecha">
+            <input type="button" id="grabar" value="Guardar pedido">
+            <input type="button" id="borrador" value="Borrar pedidos">
+        </form>
+    </div>
+    
+    <div id="pedidoCargado">
+        <div class="headTable nombreTabla">Nombre</div
+        ><div class="headTable horarioTabla">Horario</div
+        ><div class="headTable descripTabla">Descripción</div
+        ><div class="headTable fechaTabla">Fecha</div>
+    </div>
+
+
+    <div id="grabados">
+        
+    </div>
+
+    
+    <script type="text/javascript" src="js/storage.js"></script>
+</body>
+
+</html>

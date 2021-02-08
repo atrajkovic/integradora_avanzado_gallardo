@@ -1,0 +1,783 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v15-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v15-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+
+body{
+    min-width: 960px;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color:#b2edea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+#logo-container{
+    width: 20%;
+    background-color: #ffffff;
+    height: 100px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border:  2px solid #000000;
+    box-sizing: border-box;
+    float: left;
+}
+
+#logo-img{
+    height: 90px;
+}
+
+#canvas-burguer{
+    width: 0px;
+    height: 0px;
+}
+
+#botonera{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    margin-bottom: 15px;
+    width: 80%;
+    float: right;
+    height: 100px;
+}
+
+
+.boton-nav, .btn-activo{
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+    text-align: center;
+    height: 100px;
+    background-color: #aff0b8;
+    color: #000000;
+    box-sizing: border-box;
+    padding-top: 30px;
+    font-size: 1.3rem;
+}
+
+.btn-activo{
+    border-bottom: 3px solid #68b072;
+}
+
+.boton-nav:hover, .btn-activo:hover{
+    background-color: #68b072;
+    color: #ffffff;
+}
+
+#empresa-inicio    h1{
+    font-size: 3rem;
+    margin: 10px 0 5px 0;
+}
+
+#empresa-inicio h3{
+    font-size: 2rem;
+    margin: 0;
+}
+
+#publi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid #0330ad;
+}
+#publi-boton{
+    margin: 10px auto 20px;
+    width: 300px;
+    height: 36px;
+    font-size: 1.3rem;
+    border-radius: 18px;
+    box-sizing: content-box;
+    border: 2px solid #0330ad;
+    background-color: #0330ad;
+    color: #ffffff;
+}
+
+#publi-boton:hover{
+    background-color: #ffffff;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+#publi-tit{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+#publi-texto{
+    font-size: 1.2rem;
+}
+
+#reproductor{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#video{
+    max-width: 1920px;
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+#controladores{
+    
+    width: 70%;
+    margin: 0 auto;
+}
+
+#botones{
+    text-align: left;
+}
+
+#barra{
+    height: 12px;
+    width: 55%;
+    margin-left: 1.5%;
+    background-color: #68b072;
+    display: inline-block;
+    position: relative;
+    border-radius: 6px;
+}
+
+#progreso{
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #000000;
+    display: inline-block;
+    position: absolute;
+    margin-top: 3px;
+
+}
+
+.btn-control{
+    width: 10%;
+    height: 22px;
+    box-sizing: border-box;
+}
+
+.carousel{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slick-slide img{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#valores{
+    margin-top: 40px;
+    margin-bottom: 500px;
+    text-align: center;
+}
+
+#flex-container{
+    flex-direction: row;
+    flex-flow: row;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 75%;
+    margin: 20px auto 0;
+}
+
+.flex-item{
+    text-align: center;
+    flex: 1 2 26%;
+    margin: 0 15px;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 2px solid #0330ad;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.flex-item:hover{
+    transform:scale(1.08);
+    border: 4px solid #075400;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+.valor-img{
+    width: 60%;
+    margin-top: 25px;
+}
+
+.valor-txt{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#valores-h2{
+    margin: 0 auto;
+    font-size: 3rem;
+    color: #0330ad;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+/* transition-property y transition-duration están repetidas para animar tanto cuando se coloca el mouse como cuando se quita de encima*/
+
+#valores-h2:hover{
+    color: #075400;
+    transform: scale(1.2);
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+.desc-formulario{
+    display: block;
+    margin: 15px 0 3px 0;
+    font-size: 1.1rem;
+    color: #0330ad;
+}
+
+.campo-form{
+    border: none;
+    border-bottom: 2px solid #0330ad;
+    background-color: transparent;
+    width: 300px;
+    font-size: 1.1rem;
+}
+
+#cabeza-form{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0330ad;
+}
+
+#mensaje {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    background-color: transparent;
+    border: 2px solid #0330ad;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#drag-drop{
+    width: 100%;
+    height: 150px;
+    border: 2px dotted #0330ad;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensaje::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;    
+}
+
+#enviar{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #0330ad;
+    background-color: #0330ad;
+    color: #ffffff;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    
+}
+
+#enviar:hover{
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: #ffffff;
+    color: #0330ad;
+}
+
+
+#adv-campos{
+    color: #0330ad;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+form{
+    width: 600px;
+    max-width: 100%;
+    margin: 50px auto 0;
+}
+
+#svg-wsp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: visible;
+}
+
+/* ******* SERVICIOS ******* */
+
+#servicios{
+    width: 90%;
+    margin: 50px auto 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#servicios-head{
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#servicios-head > span{
+    color: #075400;
+}
+
+#catering, #viandas, #especiales{
+    width: 30%;
+    padding: 10px 50px;
+    display: inline-block;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #075400;
+    border-radius: 20px;
+    background: rgb(45,253,174);
+    background: linear-gradient(0deg, rgba(45,253,174,1) 0%, rgba(34,99,195) 100%);
+}
+
+.img-servicios {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 85%;
+    align-self: flex-end;
+    border-radius: 20px;
+}
+
+.img-servicios:hover {
+    animation-name: img-servicio;
+    animation-duration: 2s;
+
+}
+
+@keyframes img-servicio{
+    from {
+        width: 85%;
+        border-radius: 20px;
+    }
+    50%{
+        width: 100%;
+        border-radius: 0;
+    }
+    to{
+        width: 85%;
+        border-radius: 20px;
+    }
+}
+
+.h3-servicios{
+    font-size: 1.7rem;
+    align-self: flex-start;
+    margin: 0 0 5px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.txt-servicios{
+    font-size: 1.2rem;
+}
+
+#pedido{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #0330ad;
+    display: block;
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+#horarioComida{
+    background-color: transparent;
+    border: 2px solid #0330ad;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#horarioComida, #fecha, #grabar, #borrador{
+    width: 160px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+#descripComida, #fecha{
+    background-color: transparent;
+    border: 2px solid #0330ad;
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#descripComida{
+    width: 600px;
+    height: 200px;
+}
+
+#grabar{
+    margin: 0 auto;
+    font-size: 1rem;
+    border: 2px solid #0330ad;
+    background-color: #0330ad;
+    color: #ffffff;
+}
+
+#borrador{
+    margin: 0 auto;
+    font-size: 1rem;
+    border: 2px solid #e60707;
+    background-color: #e60707;
+    color: #ffffff;
+}
+
+#borrador:hover{
+    background-color: #ffffff;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+
+#grabar:hover{
+    background-color: #ffffff;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.headTable{
+    box-sizing: border-box;
+    border: 1px solid #0330ad;
+    display: inline-block;
+    margin: 0px;
+    background-color: #68b072;
+}
+
+.nombreTabla{
+    width: 15%;
+}
+.horarioTabla{
+    width: 10%;
+}
+.descripTabla{
+    width: 60%;
+}
+.fechaTabla{
+    width: 15%;
+}
+
+.nombreTabla, .horarioTabla, .descripTabla, .fechaTabla{
+    display: inline-block;
+}
+
+#pedidoCargado{
+    padding-top: 20px;
+}
+
+#pedidoCargado, #grabados{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.sinPedidos{
+    color: red;
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+#volverPedidos{
+    box-sizing: border-box;
+    width: 150px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #075400;
+    color: #ffffff;
+    border: 2px solid #075400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/*Tablet*/  
+@media all and (min-width:600px) and (max-width: 1023px){
+
+    body{
+        margin: 0 auto;
+        min-width: 200px;
+        max-width: 90%;
+    }
+
+    #logo-container{
+        width: 100%;
+        float: none;
+    }
+
+    #logo-img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #canvas-burguer{
+        height: 0;
+        width: 0;
+    }
+
+    #botonera{
+        height: 60px;
+        width: 100%;
+        float: none;
+    }
+
+    .boton-nav, .btn-activo{
+        height: 60px;
+        padding-top: 15px;
+    }
+
+    #publi{
+        width: 100%;
+    }
+    #publi-tit{
+        text-overflow: ellipsis;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #publi-texto{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #publi-boton{
+        width: 250px;
+    }
+
+    .slick-slide img{
+        max-height: 430px;
+    }
+
+    #video, #controladores{
+        width: 100%;
+    }
+
+    .btn-control{
+        width: 24%;
+    }
+
+    #barra{
+        width: 95%; 
+    }
+
+    #botones{
+        text-align: center;
+    }
+
+    .valor-txt{
+        font-size: 1.5rem;
+    }
+    
+    #flex-container{
+        flex-basis: 50%;
+        flex-flow: row wrap;
+        flex-direction: row-reverse;
+    }
+
+    .flex-item{
+        margin: 0 5px;
+        min-width: 200px;
+        max-width: 300px;
+        flex: 1 1 35%;
+    }
+
+    #servicios{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #catering, #viandas, #especiales{
+        width: 48%;
+    }
+
+    #pedidoCargado, #grabados{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .nombreTabla{
+        width: 15%;
+    }
+    .horarioTabla{
+        width: 20%;
+    }
+    .descripTabla{
+        width: 45%;
+    }
+    .fechaTabla{
+        width: 20%;
+    }
+
+
+
+}
+/*Celular*/
+@media all and (max-width: 599px) {
+    body{
+        min-width: 200px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    header{
+        height: 140px;
+        overflow-y: hidden;
+    }
+
+    #publi{
+        width: 100%;
+    }
+    #publi-tit{
+        text-overflow: ellipsis;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #publi-texto{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #publi-boton{
+        width: 250px;
+    }
+
+    #canvas-burguer{
+        height: 90px;
+        width: 90px;
+        background-color: #b2edea;
+        border-radius: 10px;
+        float: right;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    #canvas-burguer:hover{
+        background-color: #aff0b8;
+    }
+
+    #logo-img{
+        height: 120px;
+        float: left;
+    }
+
+    #logo-container{
+        height: 125px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .boton-nav, .btn-activo{
+        width: 100%;
+        border-bottom: 3px solid #075400;
+        border-left: 3px solid #075400;
+        border-right: 3px solid #075400;
+    }
+
+    #botonera{
+        border-top: 3px solid #075400;
+        width: 100%;
+    }
+
+    #empresa-inicio    h1{
+        font-size: 2.5rem;
+    }
+    
+    #empresa-inicio h3{
+        font-size: 1.5rem;
+    }
+
+    #video, #controladores{
+        width: 100%;
+    }
+    
+    .btn-control{
+        width: 24%;
+    }
+    
+    #barra{
+        width: 95%; 
+    }
+    
+    #botones{
+        text-align: center;
+    }
+
+    .slick-slide img{
+        max-height: 280px;
+    }
+    
+    #flex-container{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .flex-item{
+        margin-bottom: 5px;
+    }
+
+    #servicios{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #catering, #viandas, #especiales{
+        width: 100%;
+    }
+
+    #pedidoCargado, #grabados{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .nombreTabla{
+        width: 15%;
+    }
+    .horarioTabla{
+        width: 20%;
+    }
+    .descripTabla{
+        width: 45%;
+    }
+    .fechaTabla{
+        width: 20%;
+    }
+
+}
+

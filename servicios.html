@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nutricord - Servicios</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img id="logo-img" src="images/logo.jpg" alt="Nutricord - Logo">
+            <canvas id="canvas-burguer" onclick="openMenu()"></canvas>
+        </div>
+        
+        <nav>
+            <ul id="botonera">
+                <a href="index.html"><li class="boton-nav">Inicio</li
+                ></a><a href="nosotros.html"><li class="boton-nav">Nosotros</li
+                ></a><a href=""><li class="btn-activo">Servicios</li
+                ></a><a href="contacto.html"><li class="boton-nav">Contacto</li
+            ></a></ul>
+        </nav>
+    </header>
+
+    <h1 id="servicios-head">Servicios <span>Nutricord</span></h1>  
+    <section id="servicios">
+        <div id="catering">
+            <h3 class="h3-servicios">Catering de eventos</h3>
+            <p class="txt-servicios">Contamos con un excelente equipo dispuesto a preparar las entradas, platos principales y snacks que tu evento necesita.</p>
+            <img class="img-servicios" src="images/catering.png" alt="">
+        </div>
+
+        <div id="viandas">
+            <h3 class="h3-servicios">Viandas ejecutivas</h3>
+            <p class="txt-servicios">Disponemos de un servicio de elaboración de menú ejecutivo diario para empresas comprometidas con la alimentación saludable de su personal</p>
+            <img class="img-servicios" src="images/ejecutivo.png" alt="">
+        </div>
+
+        <div id="especiales">
+            <h3 class="h3-servicios">Alimentación especial</h3>
+            <p class="txt-servicios">Para aquellos casos donde la alimentación tiene grandes requisitos, contamos con la posibilidad de elaborar viandas diferenciadas y adaptadas a las necesidades de cada persona. Servicio de alto detalle y calidad.</p>
+            <img class="img-servicios" src="images/especial.png" alt="">
+        </div>
+
+    </section>
+    <script src="js/burguer.js"></script>
+</body>
+</html>
